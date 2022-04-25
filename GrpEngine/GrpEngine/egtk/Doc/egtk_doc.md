@@ -1,15 +1,15 @@
 # Elcos Graphic ToolKit
-Simple portable graphic toolkit for mcrocontroller.
+Simple portable graphic toolkit for mcrocontroller or whatever you need...
 
 ## File
 Library composed by:
 
 - *egtk.cpp* Main library
 - *egtk_fonts.cpp* Fonts collection
-- *egtk_driver.cpp* Harware driver
+- *egtk_driver.cpp* Hardware driver
 - *egtk_colour.cpp* Colour support
 
-Each file has his header file.
+Each file has his header file. File are c compliant, just replace extension in c.
 
 ## Usage
 Just Include *egtk.h* file and define hardware abstraction functions in *egtk_driver.cpp*.
@@ -26,19 +26,17 @@ You need to define the dimension of the double buffer used for internal operatio
 
 You can include colour averege when scaling image dimensions: COLOUR_MEAN.
 
-Upu can define egtk_COL_T as RGB565 or RGB88
+Upu can define egtk_COL_T as RGB565 or RGB88.
 
 ## Remarks
 Origin is TOP-LEFT of the screen.
-
-Color Information is RGB 565, each pixel is 16bit variable.
 
 ## Functions
 
 ### Initialization 
 
 #### egtkInitScreen
-Initialize screeen
+Initialize screeen.
 
 - *Width* of the screen 
 - *Height* of the screen
@@ -48,7 +46,7 @@ Initialize screeen
 ### Geometrical
 
 #### egtkDrawLine
-Draw a line to the screen
+Draw a line to the screen.
 
 - *x0* initial 
 - *y0* initial 
@@ -57,7 +55,7 @@ Draw a line to the screen
 - *Colour* of the line
 
 #### egtkPutPixel
-Put a pixel on the screen
+Put a pixel on the screen.
 
 - *x0* position
 - *y0* position
@@ -65,7 +63,7 @@ Put a pixel on the screen
    
    
 ### egtkGetPixel   
-Get a pixel from the screen 
+Get a pixel from the screen.
 - *x0* position
 - *y0* position
 - *Colour* of the point
@@ -81,7 +79,7 @@ Draw or fill a rectangle in the screen
 - *Colour* of the line
 
 #### egtkFillRoundedRectangle/egtkDrawRoundedRectangle
-Draw or fill a rectangle with rounded corner
+Draw or fill a rectangle with rounded corner.
 
 - *x0* upper left
 - *y0* upper left
@@ -91,14 +89,14 @@ Draw or fill a rectangle with rounded corner
 - *Colour* of the line
 
 #### egtkDrawCircle/egtkFillCircle
-Draw or fill a circle
+Draw or fill a circle.
 
 - *xc* center
 - *yc* center
 - *color* 
 
 #### egtkDrawEllipse/egtkFillEllipse
-Draw or fill an ellipse
+Draw or fill an ellipse.
 
 - *x0* center
 - *y0* center
@@ -107,7 +105,7 @@ Draw or fill an ellipse
 - *color* 
 
 #### egtkDrawTriangle
-Draw or fill a triangle
+Draw or fill a triangle.
 
 - *x0* first vertex
 - *y0* first vertex
@@ -118,9 +116,10 @@ Draw or fill a triangle
 - *Colour* 
 
 #### egtkDrawPolygon/egtkFillPolygon
-Draw or fill a generic opolygon
+Draw or fill a generic opolygon.
 
 - *amount* of vertex
+- *vertices* 
 - *color*
 
 ### Utility
@@ -131,26 +130,27 @@ Clear the screen filling background color.
 
 ### egtkGetScreenW
 
-Return the Width of the screen
+Return the width of the screen.
 
 ### egtkGetScreenH
 
-Return the hight of the screen
+Return the hight of the screen.
 
 ### Glyph Image
-A glyph is a simple, graphic image that represents an idea, sored in *egtk_GLYPH_T* Type. Is defined to be monochrome. Use lcd-image-converter to generate egtk_GLYPH_T struct.
+A glyph is a simple, graphic image that represents an idea, sored in *egtk_GLYPH_T* Type. Is defined to be monochrome. Use lcd-image-converter to generate egtk_GLYPH_T struct. A glyph is stored 1 pixel each bit, so space occupation is lower that bmp.
 
 #### egtkDrawGlyph
-Draw a glyph image
+Draw a glyph image, overwrite mode available.
 
 - *x0* upper left position
 - *y0* upper left position
 - *BackGrColour* colour background
 - *ForeGrColour* colour foreground
 - *pGlyphIn*  glyph image
+- *OverWrite*  overwrite/no overwrite present screen
    
 #### egtkDrawFitGlyph
-Fit (scale/zoom) a glyph image in defined position
+Fit (scale/zoom) a glyph image in defined position: olways overwrite mode.
 
 - *x0* upper left position
 - *y0* upper left position
@@ -161,7 +161,13 @@ Fit (scale/zoom) a glyph image in defined position
 - *pGlyphIn*  glyph image pointer
 
 ### Bitmap   
-Bitmap is a coloured image sored ad *tBitmap* type. Use lcd-image-converter to generate tBitmap struct.
+Bitmap is a coloured image sored ad *tBitmap* type. Use lcd-image-converter to generate tBitmap struct Thank to Vladimir riuson
+
+<riuson@gmail.com>
+
+[http://www.riuson.com/lcd-image-converter](http://www.riuson.com/lcd-image-converter )
+
+
 ### egtkDrawBitmap
 
 - *x0* upper left position
@@ -178,29 +184,38 @@ Bitmap is a coloured image sored ad *tBitmap* type. Use lcd-image-converter to g
 
 ### Text
 You need to enable used font. 
+Font tables from *µGUI* library. Thanks to:
+
+Achim Döbler
+
+[http://www.embeddedlightning.com/](http://www.embeddedlightning.com/)
+
+
 ### egtkPutChar
 Print a character on the screen Overwrite or NoOverWrite morde
 - *FontCode* 0...255
+- *OverWrite* overwrite/no overwrite present screen
 
 #### egtkWriteString
 Print string CR+LF...
 Print a string on the screen Overwrite or NoOverWrite morde
 - *InString*  String to print
+- *OverWrite* overwrite/no overwrite present screen
 
 #### egtkSetFont
-Set new font and features
+Set new font and features.
 - *pFont* Font to set
 - *FontSpaceX* space distance
 - *FontSpaceY* line distance
 - *Reverse* Set reverse colour
 
 #### egtkSetPos
-Set position top left
+Set start writing position: top left.
 - *PosX* 
 - *PosY* 
 
 #### egtkSetReverse
-Set reverse colour
+Set reverse colour.
 - *Reverse* Reverse colour
 
 #### egtkSetColour
@@ -209,7 +224,6 @@ Set reverse colour
 
 ### 25/04/2022
 First release
-
 
 
 
