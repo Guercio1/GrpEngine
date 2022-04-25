@@ -1,0 +1,17 @@
+# =================
+# VISUAL STUDIO
+#==================
+ExportedObj/
+*.svd
+*.userprefs
+*.csproject
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.bootproj
+*.tmp
+.vc
+
+
