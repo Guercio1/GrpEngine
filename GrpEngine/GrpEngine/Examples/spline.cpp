@@ -3,7 +3,6 @@
 #include <windows.h>
 
 #include "..\egtk\egtk.h"
-//#include "..\egtk\elcos.h"
 
 using namespace std;
 
@@ -144,8 +143,39 @@ public://protected:
 	// Called by olcConsoleGameEngine
 	OneLoneCoder_Splines(void)
 	{
+
+	}
+
+	void InitPoint()
+	{
+
+		
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+
+		float ang = 0;
+
+		float radius = MIN(egtkGetScreenW(), egtkGetScreenH()) / 3;
+
+		float middleY = egtkGetScreenH() / 2;
+		float middleX = egtkGetScreenW() / 2;
+		sPoint2D SplinePoin;
+
+		for ( int i= 0; i<10 ; i++)
+		{
+			SplinePoin.x = middleX + radius * cos(ang);
+			SplinePoin.y = middleY + radius * sin(ang);
+
+			path.points.push_back(SplinePoin);
+
+			ang += 2 * 3.14159f / 10;
+
+		}
+		
+			
+
 		//path.points = { { 10, 41 },{ 40, 41 },{ 70, 41 },{ 100, 41 } };
-		path.points = { { 100, 100 },{ 200, 200 },{ 300, 300 },{ 400, 400 },{ 500, 500 },{ 100, 600 }, };
+		//path.points = { { 100, 100 },{ 200, 200 },{ 300, 300 },{ 400, 400 },{ 500, 500 },{ 100, 600 }, };
 		//return true;
 	}
 
@@ -320,6 +350,7 @@ public://protected:
 		egtkSetPos(xposNow, 30);
 		egtkWriteString(Cstr, false);
 
+/*
 		sprintf_s(Cstr, sizeof(Cstr), "Line 1=%f,%f", line1.x, line1.y);
 		egtkSetPos(xposNow, 50);
 		egtkWriteString(Cstr, false);
@@ -327,7 +358,7 @@ public://protected:
 		sprintf_s(Cstr, sizeof(Cstr), "Line 2=%f,%f", line2.x, line2.y);
 		egtkSetPos(xposNow, 70);
 		egtkWriteString(Cstr, false);
-
+*/
 
 
 
@@ -340,6 +371,7 @@ public://protected:
 	}
 };
 
+
 OneLoneCoder_Splines SplineReal;
 
 void KeyboardSpline(int keycode, bool push)
@@ -350,6 +382,8 @@ void KeyboardSpline(int keycode, bool push)
 void InitSpline(void)
 {
 	egtkInitScreen(700, 500, RGB565_WHITE, RGB565_BLACK);
+
+	SplineReal.InitPoint();
 }
 
 void GestSpline(void)
@@ -357,10 +391,7 @@ void GestSpline(void)
 	int TimerSys;
 	static int LastTimerSys = 0;
 
-
 	TimerSys = GetTickCount();
-
-    //egtkDrawGlyph(200, 200, RGB565_WHITE, RGB565_BLACK, &Elcos,false);
 
 	SplineReal.OnUserUpdate((TimerSys - LastTimerSys) / 100);
 

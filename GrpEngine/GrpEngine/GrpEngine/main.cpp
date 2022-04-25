@@ -4,26 +4,39 @@
 #include "..\Examples\spline.h"
 #include "..\egtk\egtk.h"
 
+#define TEST_SPLINE 
+//#define TEST_LIBRARY
 
 void KeyboardCallback(int keycode, bool push)
 {
-    //KeyboardSpline(keycode, push);
+#ifdef TEST_SPLINE 
+    KeyboardSpline(keycode, push);
+#endif
 }
 
 void MouseCallback(int xpos, int ypos, bool Push)
 {
-    //MouseSpline(xpos, ypos, Push);
+#ifdef TEST_SPLINE 
+    MouseSpline(xpos, ypos, Push);
+#endif
 }
 
 void InitScreen(void)
 {
-    //InitSpline();
+#ifdef TEST_SPLINE 
+    InitSpline();
+#endif
 
+#ifdef TEST_LIBRARY
     TestLibraryInit();
+#endif
 }
 void DrawScreen(void)
 {
-    //GestSpline();
-
+#ifdef TEST_SPLINE 
+    GestSpline();
+#endif
+#ifdef TEST_LIBRARY
     TestLibraryGest();
+#endif
 }

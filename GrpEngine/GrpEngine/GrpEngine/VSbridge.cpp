@@ -181,7 +181,7 @@ wWinMain(HINSTANCE instance,
         static uint32_t TimerLast;
         uint32_t TimerNow;
         static uint16_t CntFrame = 0;
-        wchar_t  buf[1000];
+        wchar_t  buf[200];
 
 
         while (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
