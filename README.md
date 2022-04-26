@@ -6,7 +6,8 @@ This is a graphic engine usefull to test graphic libraries.
 Refer to *egtk* library *GrpEngine\GrpEngine\egtk* that is the base of the engine.
 You can find documentatione here: *GrpEngine\GrpEngine\egtk\Doc*.
 
-##Usage
+## Usage
+
 Edit your test file source *testprj.cpp* and header *testprj.h*; only requirement is class with some public functions. Steps are:
 
 - Program:
@@ -14,12 +15,12 @@ Edit your test file source *testprj.cpp* and header *testprj.h*; only requiremen
 		class MyTestClass
 		{
 		public:
-			TestLibraryClass(void) {};
+			TestLibraryClass(void);
 		
 		public:
 			void OnUserCreate(void);
-			void OnUserMouse(int, int, MOUSE_TYPE) {};
-			void OnUserKeyboard(int, bool) {};
+			void OnUserMouse(int, int, MOUSE_TYPE);
+			void OnUserKeyboard(int, bool);
 			bool OnUserUpdate(float) ;
 		};
 - Include *testprj.h* in *VSbridge.cpp*.
@@ -30,7 +31,7 @@ Edit your test file source *testprj.cpp* and header *testprj.h*; only requiremen
 Main program will call:
 
 
-1. *MyTestClass.OnUserCreate()* at the biginning of the program; first operation irequired is initialization of the graphic ambient: *egtkInitScreen(MY_WIDTH, MY_HEIGHT, MY_FREGRND, MY_BCKGRND);*
+1. *MyTestClass.OnUserCreate()* at the biginning of the program; first operation required is initialization of the graphic ambient: *egtkInitScreen(MY_WIDTH, MY_HEIGHT, MY_FREGRND, MY_BCKGRND);*
 
 2. *MyTestClass.OnUserUpdate(DeltaTime)* in main loop; *DeltaTime* is the interval between two calls.
 
