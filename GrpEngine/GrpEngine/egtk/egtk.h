@@ -1,5 +1,5 @@
    /*****************************************************************************
-   * @file    egtk_colour.h                                                     *
+   * @file    egtk.h                                                            *
    * @author  Nicola Guercetti                                                  *
    * @version 1.00                                                              *
    * @date    29 March 2022                                                     *
@@ -10,8 +10,6 @@
 #define EGTK_BUFF_SIZE  500*500         //Dimension of the temp doube buffer
 #define COLOUR_AVERAGE                  //When scaling image averages the colour information
 #define  egtk_COL_T RGB565_TYPE         //Type of colour
-
-
 
 
 typedef struct {

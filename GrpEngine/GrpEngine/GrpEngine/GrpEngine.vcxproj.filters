@@ -60,6 +60,15 @@
     <ClInclude Include="..\Examples\TestLibrary.h">
       <Filter>File di intestazione\Examples</Filter>
     </ClInclude>
+    <ClInclude Include="..\Examples\sphere.h">
+      <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Examples\balls2.h">
+      <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Examples\spline2.h">
+      <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GrpEngine.rc">
@@ -75,9 +84,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="VSbridge.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
@@ -96,7 +102,13 @@
     <ClCompile Include="..\Examples\TestLibrary.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
-    <ClCompile Include="..\Examples\spline.cpp">
+    <ClCompile Include="..\Examples\sphere.cpp">
+      <Filter>File di origine\Eamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Examples\balls2.cpp">
+      <Filter>File di origine\Eamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Examples\spline2.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
   </ItemGroup>

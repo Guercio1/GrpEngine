@@ -1,27 +1,7 @@
-﻿  spline.cpp
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(40,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(74,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(158,16): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(160,17): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(161,17): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(194,37): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(195,37): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(212,26): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(213,26): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(255,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(266,52): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(277,52): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(296,27): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(296,20): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(307,55): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(307,32): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(310,51): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(310,33): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(311,49): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(311,31): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(319,76): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(319,45): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(320,74): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(320,43): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline.cpp(396,52): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+﻿  VSbridge.cpp
+C:\work\Temp\GrpEngine\GrpEngine\Examples\spline2.h(35,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\spline2.h(69,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(81,36): warning C4244: 'argomento': conversione da 'WPARAM' a 'int'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(172,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(173,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
   GrpEngine.vcxproj -> C:\work\Temp\GrpEngine\GrpEngine\x64\Debug\GrpEngine.exe

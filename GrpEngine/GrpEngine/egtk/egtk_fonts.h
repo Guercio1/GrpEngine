@@ -4,6 +4,7 @@
 
 #define  USE_FONT_8X14 1
 #define USE_FONT_32X53 1
+#define USE_FONT_10X16 1
 
 unsigned char reverse_byte(unsigned char );
 

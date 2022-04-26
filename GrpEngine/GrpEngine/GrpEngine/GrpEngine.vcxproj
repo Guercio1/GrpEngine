@@ -153,6 +153,9 @@
     <ClInclude Include="..\egtk\egtk_fonts.h" />
     <ClInclude Include="..\egtk\Elcos.h" />
     <ClInclude Include="..\egtk\Giako.h" />
+    <ClInclude Include="..\Examples\balls2.h" />
+    <ClInclude Include="..\Examples\sphere.h" />
+    <ClInclude Include="..\Examples\spline2.h" />
     <ClInclude Include="..\Examples\TestLibrary.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
@@ -171,9 +174,10 @@
     <ClCompile Include="..\egtk\egtk_colour.cpp" />
     <ClCompile Include="..\egtk\egtk_driver.cpp" />
     <ClCompile Include="..\egtk\egtk_fonts.cpp" />
-    <ClCompile Include="..\Examples\spline.cpp" />
+    <ClCompile Include="..\Examples\balls2.cpp" />
+    <ClCompile Include="..\Examples\sphere.cpp" />
+    <ClCompile Include="..\Examples\spline2.cpp" />
     <ClCompile Include="..\Examples\TestLibrary.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="VSbridge.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
