@@ -7,19 +7,10 @@
 #include <Windowsx.h>
 #include "VSbridge.h"
 
-#include "..\Examples\balls2.h"
-#include "..\Examples\spline2.h"
-#include "..\Examples\testlibrary.h"
 
 typedef uint32_t u32;
 
-
-
-//CirclePhysics MY_TEST;
-OneLoneCoder_Splines MY_TEST;
-//TestLibraryClass MY_TEST;
-
-
+#include "setup.h"
 
 
 void* memory;
@@ -204,7 +195,12 @@ wWinMain(HINSTANCE instance,
         CntFrame++;
         TimerNow = GetTickCount();
 
-        MY_TEST.OnUserUpdate((float)(TimerNow - TimerRevious) / 1000);
+        float Counter = (float)(TimerNow - TimerRevious) / 1000;
+        const float CounterMax = 0.1f;
+        if (Counter > CounterMax)
+            Counter = CounterMax;
+
+        MY_TEST.OnUserUpdate(Counter);
 
         TimerRevious = TimerNow;
 

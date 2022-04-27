@@ -63,11 +63,14 @@
     <ClInclude Include="..\Examples\sphere.h">
       <Filter>File di intestazione\Examples</Filter>
     </ClInclude>
-    <ClInclude Include="..\Examples\balls2.h">
-      <Filter>File di intestazione\Examples</Filter>
-    </ClInclude>
     <ClInclude Include="..\Examples\spline2.h">
       <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Examples\ballsApp.h">
+      <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="setup.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -105,10 +108,10 @@
     <ClCompile Include="..\Examples\sphere.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
-    <ClCompile Include="..\Examples\balls2.cpp">
+    <ClCompile Include="..\Examples\spline2.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
-    <ClCompile Include="..\Examples\spline2.cpp">
+    <ClCompile Include="..\Examples\ballsApp.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
   </ItemGroup>

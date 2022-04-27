@@ -1,6 +1,7 @@
 # Elcos Graphic ToolKit
 Simple portable graphic toolkit for mcrocontroller or whatever you need...
 
+
 ## File
 Library composed by:
 
@@ -26,7 +27,7 @@ You need to define the dimension of the double buffer used for internal operatio
 
 You can include colour averege when scaling image dimensions: COLOUR_MEAN.
 
-Upu can define egtk_COL_T as RGB565 or RGB88.
+You can define egtk_COL_T as RGB565 or RGB88.
 
 ## Remarks
 Origin is TOP-LEFT of the screen.
@@ -118,7 +119,7 @@ Draw or fill a triangle.
 #### egtkDrawPolygon/egtkFillPolygon
 Draw or fill a generic opolygon.
 
-- *amount* of vertex
+- *amount* of vertexes
 - *vertices* 
 - *color*
 
@@ -135,6 +136,10 @@ Return the width of the screen.
 ### egtkGetScreenH
 
 Return the hight of the screen.
+
+## egtkGetForeColour/egtkGetBackColour
+
+Return current foreground/background colour.
 
 ### Glyph Image
 A glyph is a simple, graphic image that represents an idea, sored in *egtk_GLYPH_T* Type. Is defined to be monochrome. Use lcd-image-converter to generate egtk_GLYPH_T struct. A glyph is stored 1 pixel each bit, so space occupation is lower that bmp.
@@ -161,12 +166,7 @@ Fit (scale/zoom) a glyph image in defined position: olways overwrite mode.
 - *pGlyphIn*  glyph image pointer
 
 ### Bitmap   
-Bitmap is a coloured image sored ad *tBitmap* type. Use lcd-image-converter to generate tBitmap struct Thank to Vladimir riuson
-
-<riuson@gmail.com>
-
-[http://www.riuson.com/lcd-image-converter](http://www.riuson.com/lcd-image-converter )
-
+Bitmap is a coloured image sored ad *tBitmap* type. 
 
 ### egtkDrawBitmap
 
@@ -184,12 +184,6 @@ Bitmap is a coloured image sored ad *tBitmap* type. Use lcd-image-converter to g
 
 ### Text
 You need to enable used font. 
-Font tables from *µGUI* library. Thanks to:
-
-Achim Döbler
-
-[http://www.embeddedlightning.com/](http://www.embeddedlightning.com/)
-
 
 ### egtkPutChar
 Print a character on the screen Overwrite or NoOverWrite morde
@@ -221,6 +215,42 @@ Set reverse colour.
 #### egtkSetColour
 - *ForeColour* foreground colour
 - *BackColour* background colour
+
+
+# License
+	MIT License
+
+	Copyright (c) 2022 Guercio1
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+# Thanks
+Some inspiration from Mika Tuupola           
+[https://appelsiini.net/](https://appelsiini.net/).
+
+Use lcd-image-converter to generate tBitmap struct Thank to Vladimir riuson     
+<riuson@gmail.com>      
+[http://www.riuson.com/lcd-image-converter](http://www.riuson.com/lcd-image-converter )
+
+Fonts tables from *uGUI* library. Thanks to: Achim Dobler    
+[http://www.embeddedlightning.com/](http://www.embeddedlightning.com/)
+
 
 ### 25/04/2022
 First release

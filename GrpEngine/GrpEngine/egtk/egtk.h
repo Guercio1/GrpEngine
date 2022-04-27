@@ -1,7 +1,7 @@
    /*****************************************************************************
    * @file    egtk.h                                                            *
    * @author  Nicola Guercetti                                                  *
-   * @version 1.00                                                              *
+   * @version 1.01                                                              *
    * @date    29 March 2022                                                     *
    * @brief   header                                                            *
    *****************************************************************************/
@@ -58,6 +58,8 @@ typedef struct
    void egtkClearScreen(void);
    uint16_t egtkGetScreenW(void);
    uint16_t egtkGetScreenH(void);
+   egtk_COL_T egtkGetForeColour(void);
+   egtk_COL_T egtkGetBackColour(void);
 
    //Draw a Glyph image
    void egtkDrawGlyph(int16_t , int16_t , egtk_COL_T, egtk_COL_T, const tGlyph *, bool );

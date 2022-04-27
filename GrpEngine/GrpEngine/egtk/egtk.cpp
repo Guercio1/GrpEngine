@@ -1,7 +1,7 @@
    /*****************************************************************************
    * @file    egtk.c                                                            *
    * @author  Nicola Guercetti                                                  *
-   * @version 1.00                                                              *
+   * @version 1.01                                                              *
    * @date    29 March 2022                                                     *
    * @brief   Elcos Graphik ToolKit                                             *
    ******************************************************************************
@@ -12,7 +12,10 @@
 /*
 Rel 1.00    25/04/2022
             First Emission
-
+Rel 1.01    27/04/2022
+            clip_line correct version
+            egtkGetBackColour
+            egtkGetForeColour
 
 
 */
@@ -141,12 +144,12 @@ static CODE_T code(int16_t x0, int16_t y0)
         CodeRet  = LEFT;
     else if (x0 > Screen.MaxX)
         CodeRet  = RIGHT;
-    else if (y0 < Screen.MinY )
+    
+    if (y0 < Screen.MinY )
         CodeRet  = BOTTOM;
     else if (y0 > Screen.MaxY)
         CodeRet  = TOP;
-    else
-        CodeRet  = INSIDE;
+
 
     return CodeRet ;
 }
@@ -937,6 +940,29 @@ uint16_t egtkGetScreenH(void)
 {
     return Screen.Height;
 }
+
+/********************************************************************
+  * @brief  egtGetkForeColour
+  * @param
+  * @retval
+  * @brief
+  ********************************************************************/
+uint16_t egtkGetForeColour(void)
+{
+    return Screen.ForeGrColour;
+}
+/********************************************************************
+  * @brief  egtkGetBackColour
+  * @param
+  * @retval
+  * @brief
+  ********************************************************************/
+uint16_t egtkGetBackColour(void)
+{
+    return Screen.BackGrColour;
+}
+
+
 
   /********************************************************************
   * @brief  egtkGlyph2Bitmap

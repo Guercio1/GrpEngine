@@ -1,7 +1,5 @@
 ﻿  VSbridge.cpp
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline2.h(35,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\Examples\spline2.h(69,1): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(81,36): warning C4244: 'argomento': conversione da 'WPARAM' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(172,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(173,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(72,36): warning C4244: 'argomento': conversione da 'WPARAM' a 'int'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(163,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(164,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
   GrpEngine.vcxproj -> C:\work\Temp\GrpEngine\GrpEngine\x64\Debug\GrpEngine.exe

@@ -1,5 +1,5 @@
    /*****************************************************************************
-   * @file    egtk_rgb565.h                                                     *
+   * @file    egtk_colour.h                                                     *
    * @author  Nicola Guercetti                                                  *
    * @version 1.00                                                              *
    * @date    29 March 2022                                                     *
@@ -24,6 +24,7 @@ RGB565_TYPE egtkRGB888_2_RGB565(RGB888_TYPE);
 
 #define RGB565_RED          0xF800
 #define RGB565_GREEN        0x07E0
+#define RGB565_GREEN_5      0x07C0
 #define RGB565_BLUE         0x001F
 
 #define RGB565_WHITE        0xFFFF
@@ -33,5 +34,7 @@ RGB565_TYPE egtkRGB888_2_RGB565(RGB888_TYPE);
 #define RGB565_CYAN         0x07FF
 #define RGB565_MAGENTA      0xF81F
 
+
+#define RGB565_GREY_50      (RGB565_RED/2+RGB565_GREEN_5/2+RGB565_BLUE/2)
 
 

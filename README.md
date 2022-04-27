@@ -23,9 +23,9 @@ Edit your test file source *testprj.cpp* and header *testprj.h*; only requiremen
 			void OnUserKeyboard(int, bool);
 			bool OnUserUpdate(float) ;
 		};
-- Include *testprj.h* in *VSbridge.cpp*.
+- Include *testprj.h* in *setup.h*.
 
-- Replace *MyTestClass MY_TEST* at he beginning of *VSbridge.cpp* file.
+- Replace *MyTestClass MY_TEST* at he beginning of *setup.h* file.
 
 
 Main program will call:
@@ -44,12 +44,13 @@ Main program will call:
 ## Examples
 You can find some examples *GrpEngine\GrpEngine\Examples*.
 
+### Sphere
+Light on a sphere....
 
-### spline
-### balls
+### spline / balls2 / ballsApp
 Many thanks to **javidx9**!!!!!!!!!!!
 
-[www.onelonecoder.com](www.onelonecoder.com)
+[www.onelonecoder.com](http://www.onelonecoder.com)
 
 ### testlibrary
 Just to test egtk library.
@@ -57,7 +58,6 @@ Just to test egtk library.
 ##release
 
 #### 25/04/2022
-
 First
 
 #### 26/04/2022
@@ -66,7 +66,7 @@ Better mouse supports.
 C++ call class system.     
 
 
-
-
-
+#### 27/04/2022
+File setup.h included.
+Better timing 
 
