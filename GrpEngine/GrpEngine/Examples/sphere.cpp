@@ -179,9 +179,9 @@ void SpherelightClass::DrawReflexLight(void)
 // mandatory functions
 bool SpherelightClass::OnUserCreate(void) {
 
-	egtkInitScreen(700, 500, RGB565_WHITE,RGB565_BLACK );
+	egtkInitScreen(900, 600, RGB565_WHITE,RGB565_BLACK );
 
-	ContLight.Radius = 40;
+	ContLight.Radius = 50;
 	ContLight.Control = 5;
 	ContLight.cntrX = egtkGetScreenW() - ContLight.Radius - 30;
 	ContLight.cntrY = ContLight.Radius + 30;
@@ -192,7 +192,7 @@ bool SpherelightClass::OnUserCreate(void) {
 	VectNormalize(&Light);
 
 
-	SphereRadius = 150;
+	SphereRadius = 280;
 
 	return true;
 }

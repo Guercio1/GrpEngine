@@ -153,6 +153,7 @@
     <ClInclude Include="..\egtk\egtk_fonts.h" />
     <ClInclude Include="..\egtk\Elcos.h" />
     <ClInclude Include="..\egtk\Giako.h" />
+    <ClInclude Include="..\Examples\3d_3.h" />
     <ClInclude Include="..\Examples\ballsApp.h" />
     <ClInclude Include="..\Examples\sphere.h" />
     <ClInclude Include="..\Examples\spline2.h" />
@@ -175,6 +176,7 @@
     <ClCompile Include="..\egtk\egtk_colour.cpp" />
     <ClCompile Include="..\egtk\egtk_driver.cpp" />
     <ClCompile Include="..\egtk\egtk_fonts.cpp" />
+    <ClCompile Include="..\Examples\3d_3.cpp" />
     <ClCompile Include="..\Examples\ballsApp.cpp" />
     <ClCompile Include="..\Examples\sphere.cpp" />
     <ClCompile Include="..\Examples\spline2.cpp" />

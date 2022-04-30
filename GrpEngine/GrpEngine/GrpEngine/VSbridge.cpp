@@ -146,6 +146,9 @@ wWinMain(HINSTANCE instance,
 
     // create BITMAPINFO struct for StretchDIBits
 
+
+    HDC hdc = GetDC(window);
+
     BITMAPINFO bitmap_info;
     bitmap_info.bmiHeader.biSize = sizeof(bitmap_info.bmiHeader);
     bitmap_info.bmiHeader.biWidth = client_width;
@@ -153,8 +156,6 @@ wWinMain(HINSTANCE instance,
     bitmap_info.bmiHeader.biPlanes = 1;
     bitmap_info.bmiHeader.biBitCount = 32;
     bitmap_info.bmiHeader.biCompression = BI_RGB;
-
-    HDC hdc = GetDC(window);
 
     // loop
 
@@ -185,7 +186,8 @@ wWinMain(HINSTANCE instance,
         wchar_t  buf[200];
 
 
-        while (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
+        //while (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
+            PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE);
         {
             if (msg.message == WM_QUIT) running = false;
             TranslateMessage(&msg);
@@ -211,8 +213,9 @@ wWinMain(HINSTANCE instance,
             SetWindowText(window, buf);
 
             TimerLast = TimerNow;
-            CntFrame--;
+            CntFrame = 0;
         }
+
 
         StretchDIBits(hdc,
             0,

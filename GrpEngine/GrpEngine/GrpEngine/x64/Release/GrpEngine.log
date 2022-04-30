@@ -1,10 +1,11 @@
-﻿  VSbridge.cpp
+﻿  TestLibrary.cpp
+  VSbridge.cpp
 C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(72,36): warning C4244: 'argomento': conversione da 'WPARAM' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(163,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(164,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(164,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(165,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
   Generazione codice in corso...
-  206 of 223 functions (92.4%) were compiled, the rest were copied from previous compilation.
-    18 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  66 of 169 functions (39.1%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    11 functions had inline decision re-evaluated but remain unchanged
   Generazione codice terminata
   GrpEngine.vcxproj -> C:\work\Temp\GrpEngine\GrpEngine\x64\Release\GrpEngine.exe

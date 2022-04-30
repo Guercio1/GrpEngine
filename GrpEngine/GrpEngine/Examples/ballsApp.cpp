@@ -63,11 +63,11 @@ bool CirclePhysics::OnUserCreate(void)
 {
 	float fDefaultRad = 20.0f;
 
-	egtkInitScreen(800, 600, RGB565_WHITE, RGB565_BLACK);
+	egtkInitScreen(1000, 800, RGB565_WHITE, RGB565_BLACK);
 
 	// Add 10 Random Balls
-	for (int i = 0; i < 200; i++)
-		AddBall(rand() % egtkGetScreenW(), rand() % egtkGetScreenH(), 10/*rand() % 25 + 10*/);
+	for (int i = 0; i < 300; i++)
+		AddBall(rand() % egtkGetScreenW(), rand() % egtkGetScreenH(), 8/*rand() % 25 + 10*/);
 
 	float fLineRadius = 10.0f;
 

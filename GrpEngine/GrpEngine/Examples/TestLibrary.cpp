@@ -91,7 +91,7 @@
  	//egtkFillTriangle(285,20,400,160,260,300,RGB565_CYAN );
  	//egtkFillRoundedRectangle(150,150,300,200,9,RGB565_MAGENTA);
 
- 	//egtkDrawBitmap(5, 5, &Giako);
+ 	egtkDrawBitmap(5, 5, &Giako);
 
     return true;
  }

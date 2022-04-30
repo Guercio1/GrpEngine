@@ -1,10 +1,24 @@
    /*****************************************************************************
    * @file    egtk.h                                                            *
    * @author  Nicola Guercetti                                                  *
-   * @version 1.01                                                              *
-   * @date    29 March 2022                                                     *
+   * @version 1.02                                                              *
+   * @date    29 Apr 2022                                                       *
    * @brief   header                                                            *
    *****************************************************************************/
+
+   /*
+   Rel 1.00    25/04/2022
+               First Emission
+   Rel 1.01    27/04/2022
+               clip_line correct version
+               egtkGetBackColour
+               egtkGetForeColour
+
+   Rel 1.02    Fix egtkFillPolygon
+
+   */
+
+
 #include "egtk_colour.h"
 
 #define EGTK_BUFF_SIZE  500*500         //Dimension of the temp doube buffer

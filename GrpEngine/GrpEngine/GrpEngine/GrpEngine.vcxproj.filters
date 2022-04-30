@@ -72,6 +72,9 @@
     <ClInclude Include="setup.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="..\Examples\3d_3.h">
+      <Filter>File di intestazione\Examples</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GrpEngine.rc">
@@ -112,6 +115,9 @@
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
     <ClCompile Include="..\Examples\ballsApp.cpp">
+      <Filter>File di origine\Eamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Examples\3d_3.cpp">
       <Filter>File di origine\Eamples</Filter>
     </ClCompile>
   </ItemGroup>

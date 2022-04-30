@@ -1,5 +1,14 @@
-﻿  VSbridge.cpp
+﻿  3d_3.cpp
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(210,33): warning C4244: '=': conversione da 'double' a 'uint8_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(248,42): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(248,21): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(247,42): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(247,21): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(246,58): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\Examples\3d_3.cpp(246,37): warning C4244: 'argomento': conversione da 'float' a 'int16_t'. Possibile perdita di dati.
+  VSbridge.cpp
 C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(72,36): warning C4244: 'argomento': conversione da 'WPARAM' a 'int'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(163,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
-C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(164,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(164,23): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+C:\work\Temp\GrpEngine\GrpEngine\GrpEngine\VSbridge.cpp(165,25): warning C4244: 'inizializzazione': conversione da 'LONG_PTR' a 'DWORD'. Possibile perdita di dati.
+  Generazione del codice in corso...
   GrpEngine.vcxproj -> C:\work\Temp\GrpEngine\GrpEngine\x64\Debug\GrpEngine.exe

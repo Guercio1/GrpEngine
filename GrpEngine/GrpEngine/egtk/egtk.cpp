@@ -1,24 +1,12 @@
    /*****************************************************************************
    * @file    egtk.c                                                            *
    * @author  Nicola Guercetti                                                  *
-   * @version 1.01                                                              *
-   * @date    29 March 2022                                                     *
+   * @version 1.02                                                              *
+   * @date    29 Apr 2022                                                       *
    * @brief   Elcos Graphik ToolKit                                             *
    ******************************************************************************
    *                   Copyright (c) 2022 Elcos S.R.L                           *
    *****************************************************************************/
-
-
-/*
-Rel 1.00    25/04/2022
-            First Emission
-Rel 1.01    27/04/2022
-            clip_line correct version
-            egtkGetBackColour
-            egtkGetForeColour
-
-
-*/
 
 
 #include <stdlib.h>
@@ -666,7 +654,7 @@ void egtkFillPolygon(int16_t amount, int16_t *vertices, egtk_COL_T color)
     }
 
     /*  Loop through the rows of the image. */
-    for (y = miny; y < maxy; y++) {
+    for (y = miny; y <= maxy; y++) {
 
         /*  Build a list of nodes. */
         int16_t count = 0;
